@@ -1,0 +1,22 @@
+.vdyt {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+}
+h1 {
+  color: #4d96ff;
+}
+
+.imgt img {
+  max-width: 80%;
+  border: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+.imgsumenh img {
+  max-width: 80%;
+}
+img gioithieu img {
+  width: 500px;
+  height: auto;
+}
