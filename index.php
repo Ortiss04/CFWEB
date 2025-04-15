@@ -42,7 +42,7 @@ include("admincp/config/config.php")
                 document.querySelector('.overlay').classList.toggle('active');
             }
         </script>
-        <img src="imgs/Kalitalogo.png" alt="Kalita Café Logo">
+        <img id="logo" src="imgs/Kalitalogo.png" alt="Kalita Café Logo">
     </div>
     <div id="wrapper">
         <div id="gt">

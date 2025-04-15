@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   background-color: #ffffff;
   width: 100%;
@@ -10,11 +15,11 @@
   max-width: 1560px;
   border: none;
   z-index: 1000;
-
+  border: 2px solid #ccc;
 }
 
-#header img {
-  height: 130px;
+#header #logo {
+  height: 120px;
   width: 170px;
   max-width: 100%;
 }
@@ -33,6 +38,7 @@
   align-items: center;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 #ls img {
@@ -44,7 +50,6 @@
 
 #ls h3 {
   font-size: larger;
-
 }
 
 #gt {
@@ -85,9 +90,9 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 3000px;
 }
 
 .containerr {
@@ -100,20 +105,23 @@ body {
 }
 
 .product1:hover {
+  transform: scale(1.1);
   background-color: #dbdee0;
 }
-
+.product1:hover h3 {
+  color: #dd9933;
+}
 .product1 {
   width: 300px;
-  height: auto;
+  height: 500px;
+  max-height: 100%;
   text-align: center;
-
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 .product1 img {
   width: 230px;
-
-
 }
 
 .product1 p {
@@ -127,28 +135,29 @@ body {
   align-items: center;
   justify-content: center;
   height: 80px;
-  width: 100%;
-  padding: 0;
-  padding-left: 0;
-
-
+  width: 3000px;
+  max-width: 100%;
+  margin-top: 25px;
 }
 
 .sp a {
-
   margin-top: 10px;
   font-size: 30px;
 }
 
 .product:hover {
+  transform: scale(1.1);
   background-color: #d3d8dc;
 }
-
+.product:hover h3 {
+  color: #dd9933;
+}
 .product {
-
   width: 400px;
-  height: auto;
-  margin-left: 80px;
+  height: 500px;
+  max-height: auto;
+  margin-left: 35px;
+  margin-top: 25px;
 }
 
 .product img {
@@ -207,8 +216,7 @@ body {
 .menu.active {
   left: 0;
 }
-.overlay
-{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -216,7 +224,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Màu đen mờ để tạo overlay */
   z-index: 999; /* Đảm bảo overlay nằm dưới menu */
-  display: none
+  display: none;
 }
 .menu-items {
   padding: 90px 0 0 0;
@@ -265,7 +273,6 @@ body {
   margin: 0 auto;
 }
 
-
 .overlay.active {
   display: block;
 }
@@ -288,8 +295,8 @@ body {
 
 .menu-items li:hover .sub-menu {
   display: block;
-   visibility: visible;
-   opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .sub-menu {
@@ -308,21 +315,20 @@ body {
   left: 100%;
   /* Hiển thị sub-menu bên phải của menu chính */
   background-color: #333;
-  width: 250PX;
+  width: 250px;
   visibility: hidden; /* Thêm thuộc tính này */
   opacity: 0;
-  
 }
-  
-  .sub-menu li a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    white-space: nowrap;
-    height: 100%;
-  }
 
-  .sub-menu li a:hover {
-    background-color: #444;
-  }
+.sub-menu li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.sub-menu li a:hover {
+  background-color: #444;
+}
