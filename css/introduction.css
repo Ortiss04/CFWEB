@@ -34,7 +34,13 @@ body {
   line-height: 1.1;
   display: block;
 }
-
+#footer .footer-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+  color: white;
+}
 #footer .footer-section p:hover,
 #footer .footer-section a:hover {
   color: #dd9933;
@@ -175,6 +181,7 @@ body {
 }
 
 .btn-cta:hover {
+  text-decoration: none;
   background: linear-gradient(135deg, #b37828, #dd9933);
   transform: scale(1.05);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
