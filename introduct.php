@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Giới Thiệu - Kalita Coffee</title>
+  <meta name="description" content="Giới thiệu về Kalita Coffee - cửa hàng cà phê trực tuyến với sản phẩm chất lượng từ Đà Lạt, Buôn Ma Thuột.">
+  <meta name="keywords" content="cà phê, Kalita Coffee, cà phê Việt Nam, giới thiệu">
   <link rel="stylesheet" href="css/styleindex.css" />
   <link rel="stylesheet" href="css/introduction.css" />
- <!-- Bootstrap CDN -->
- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
-
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 </head>
 
 <body>
@@ -30,86 +20,71 @@
     <div class="menu" id="menu">
       <ul class="menu-items">
         <li><a href="index.php">Trang chủ</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <ul class="sub-menu">
-          <li><a href="productcf.php">Cà Phê</a></li>
-          <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
-        </ul>
-        <li><a href="#">Dịch vụ</a></li>
+        <li>
+          <a href="#">Sản phẩm</a>
+          <ul class="sub-menu">
+            <li><a href="productcf.php">Cà Phê</a></li>
+            <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
+          </ul>
+        </li>
+        <li><a href="news.php">Tin Tức</a></li>
         <li><a href="contact.php">Liên hệ</a></li>
-        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="introduct.php">Giới thiệu</a></li>
       </ul>
     </div>
 
     <div class="overlay" onclick="toggleMenu()"></div>
 
+    <img id="logo" src="imgs/Kalitalogo.png" alt="" />
+  </div>
 
-  </div>
-  <div class="embed-responsive embed-responsive-16by9 my-4">
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/6kS0v_SSeMM?si=NqTjjyKR5_bOTNH2"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
   <div class="container-fluid">
-    <div class="row text-center mt-5">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-5 text-center imgt">
-        <img src="imgs/Kalitalogo.png" alt="" />
+    <!-- Breadcrumb -->
+    <div class="main__breadcrumb" aria-label="Điều hướng">
+      <div class="breadcrumb__item">
+        <a href="index.php" class="breadcrumb__link">Trang chủ</a>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-        <h1>CHÚNG TÔI LÀ AI?</h1>
-        <p>
-          Chúng tôi là [Tên cửa hàng], một cửa hàng cà phê trực tuyến được xây
-          dựng từ niềm đam mê mãnh liệt dành cho cà phê và mong muốn nâng tầm
-          trải nghiệm thưởng thức cà phê cho mọi người. Với mục tiêu mang đến
-          những sản phẩm chất lượng nhất, chúng tôi tập trung vào việc tuyển
-          chọn các hạt cà phê tốt nhất từ những vùng trồng cà phê nổi tiếng
-          như Đà Lạt, Buôn Ma Thuột, Sơn La và các khu vực cao nguyên khác.
-          Mỗi hạt cà phê đều được thu hoạch cẩn thận, rang xay theo tiêu chuẩn
-          khắt khe để giữ được hương vị thuần khiết và đậm đà nhất. Chúng tôi
-          hiểu rằng mỗi khách hàng đều có phong cách thưởng thức cà phê riêng,
-          từ những người yêu thích vị đậm đà, mạnh mẽ của Robusta, đến những
-          người say mê sự tinh tế, thanh thoát của Arabica. Vì vậy, sản phẩm
-          của chúng tôi không chỉ đa dạng về chủng loại mà còn được thiết kế
-          để phù hợp với nhiều phương pháp pha chế khác nhau như phin, máy pha
-          espresso, pour-over, hoặc cold brew. Chúng tôi không chỉ cung cấp cà
-          phê, mà còn là cầu nối để đưa bạn đến gần hơn với thế giới cà phê
-          tuyệt vời.
-        </p>
+      <div class="breadcrumb__item">
+        <a href="introduct.php" class="breadcrumb__link">Giới thiệu</a>
       </div>
     </div>
-    <div class="row text-center mb-5">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
-        <h1>SỨ MỆNH</h1>
-        <p>
-          Sứ mệnh của chúng tôi là mang đến trải nghiệm cà phê đích thực, kết
-          nối mọi người với những sản phẩm sạch, an toàn và chất lượng cao.
-          Chúng tôi tin rằng một tách cà phê không chỉ là một thức uống, mà
-          còn là một khoảnh khắc để thư giãn, sáng tạo và tận hưởng những điều
-          tuyệt vời trong cuộc sống. Vì vậy, chúng tôi luôn nỗ lực để tạo ra
-          những sản phẩm không chỉ thơm ngon mà còn đảm bảo sự an tâm cho
-          người dùng, với quy trình sản xuất minh bạch và nguồn gốc rõ ràng.
-          Bên cạnh đó, chúng tôi hướng đến việc làm cho việc thưởng thức cà
-          phê trở nên dễ dàng và tiện lợi hơn bao giờ hết. Dù bạn ở nhà, nơi
-          làm việc hay đang bận rộn với cuộc sống hàng ngày, chúng tôi luôn
-          đảm bảo bạn có thể tận hưởng một tách cà phê chất lượng bất cứ lúc
-          nào. Chúng tôi cam kết không ngừng cải tiến, từ khâu chọn lọc nguyên
-          liệu đến dịch vụ chăm sóc khách hàng, để mỗi trải nghiệm của bạn với
-          chúng tôi đều trọn vẹn và đáng nhớ. Hơn cả việc bán cà phê, chúng
-          tôi mong muốn lan tỏa niềm đam mê và văn hóa cà phê đến mọi người,
-          tạo ra một cộng đồng yêu cà phê rộng lớn. Qua đó, chúng tôi hy vọng
-          có thể góp phần mang lại niềm vui, cảm hứng và sự kết nối trong cuộc
-          sống của mỗi khách hàng.
-        </p>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-md-2 order-1 imgsumenh my-3">
-        <img src="imgs/Kalitalogo.png" alt="" />
-      </div>
+
+    <!-- Video -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/6kS0v_SSeMM?si=NqTjjyKR5_bOTNH2" title="Giới thiệu Kalita Coffee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Who We Are -->
+    <div class="intro-section">
+      <img src="imgs/Kalitalogo.png" alt="Kalita Coffee Icon" />
+      <h1 class="intro-h1">CHÚNG TÔI LÀ AI?</h1>
+      <p class="intro-p">Kalita Coffee được xây dựng từ niềm đam mê mãnh liệt dành cho cà phê và mong muốn mang đến trải nghiệm thưởng thức cà phê chất lượng nhất. Chúng tôi tự hào cung cấp:</p>
+      <ul>
+        <li>Hạt cà phê tuyển chọn từ Đà Lạt, Buôn Ma Thuột, Sơn La.</li>
+        <li>Quy trình rang xay khắt khe, giữ trọn hương vị thuần khiết.</li>
+        <li>Sản phẩm đa dạng cho mọi phong cách pha chế: phin, espresso, pour-over, cold brew.</li>
+      </ul>
+      <p class="intro-p">Chúng tôi không chỉ bán cà phê, mà còn lan tỏa văn hóa cà phê Việt đến mọi khách hàng.</p>
+    </div>
+
+    <!-- Mission -->
+    <div class="intro-section">
+      <img src="imgs/Kalitalogo.png" alt="Kalita Coffee Icon" />
+      <h1 class="intro-h1">SỨ MỆNH</h1>
+      <p class="intro-p">Sứ mệnh của Kalita Coffee là mang đến trải nghiệm cà phê đích thực với các cam kết:</p>
+      <ul>
+        <li>Sản phẩm sạch, an toàn, nguồn gốc rõ ràng.</li>
+        <li>Kết nối cộng đồng yêu cà phê qua những tách cà phê chất lượng.</li>
+        <li>Tiện lợi, dễ dàng thưởng thức cà phê mọi lúc, mọi nơi.</li>
+      </ul>
+      <p class="intro-p">Chúng tôi không ngừng cải tiến để mỗi khoảnh khắc thưởng thức cà phê đều trọn vẹn và đáng nhớ.</p>
+      <a href="productcf.php" class="btn-cta" aria-label="Khám phá sản phẩm cà phê">Khám phá sản phẩm</a>
     </div>
   </div>
+
   <footer id="footer">
     <div class="footer-section">
-      <img src="imgs/logofooter.png" alt="Logo" />
+      <img src="imgs/logofooter.png" alt="Kalita Coffee Logo" />
     </div>
     <div class="footer-section">
       <h3>TẬP ĐOÀN KALITA COFFE</h3>
@@ -121,17 +96,17 @@
     <div class="footer-section">
       <h3>© 2018 TẬP ĐOÀN KALITA COFFE.</h3>
       <p>LIÊN KẾT NHANH</p>
-      <p>- TRUYỀN THÔNG</p>
-      <p>- CƠ HỘI NGHỀ NGHIỆP</p>
-      <p>- CHÍNH SÁCH BẢO MẬT</p>
-      <p>- THÔNG TIN LIÊN HỆ</p>
+      <p>TRUYỀN THÔNG</p>
+      <p>CƠ HỘI NGHỀ NGHIỆP</p>
+      <p>CHÍNH SÁCH BẢO MẬT</p>
+      <p>THÔNG TIN LIÊN HỆ</p>
     </div>
     <div class="footer-section">
       <h3>SOCIAL MEDIA</h3>
-      <p>- Facebook</p>
-      <p>- Instagram</p>
-      <p>- Youtube</p>
-      <p>- Tiktok</p>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>Youtube</p>
+      <p>Tiktok</p>
     </div>
   </footer>
 

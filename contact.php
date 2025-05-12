@@ -17,11 +17,13 @@
     <div class="menu" id="menu">
       <ul class="menu-items">
         <li><a href="index.php">Trang chủ</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <ul class="sub-menu">
-          <li><a href="productcf.php">Cà Phê</a></li>
-          <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
-        </ul>
+        <li>
+          <a href="#">Sản phẩm</a>
+          <ul class="sub-menu">
+            <li><a href="productcf.php">Cà Phê</a></li>
+            <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
+          </ul>
+        </li>
         <li><a href="news.php">Tin Tức</a></li>
         <li><a href="contact.php">Liên hệ</a></li>
         <li><a href="introduct.php">Giới thiệu</a></li>
@@ -30,7 +32,7 @@
 
     <div class="overlay" onclick="toggleMenu()"></div>
 
-    <img src="imgs/Kalitalogo.png" alt="" />
+    <img id="logo" src="imgs/Kalitalogo.png" alt="" />
   </div>
 
   <div class="content">
@@ -46,12 +48,12 @@
           </li>
           <li>
             <a href="tel:0582718134" class="contact__link">
-              <i class="fas fa-phone"></i> 058 271 8134
+              <i class="fas fa-phone"></i> 035 3940 129
             </a>
           </li>
           <li>
             <a href="mailto:Vinh022101102@tgu.edu.vn" class="contact__link">
-              <i class="fas fa-envelope"></i> Vinh022101102@tgu.edu.vn
+              <i class="fas fa-envelope"></i> Thuong022101045@tgu.edu.vn
             </a>
           </li>
         </ul>

@@ -49,6 +49,11 @@ $products = $db->getProducts();
     <title>Sản phẩm </title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .product-grid {
             display: grid;
             grid-auto-flow: row;
@@ -56,13 +61,13 @@ $products = $db->getProducts();
             gap: 15px;
             padding-bottom: 10px;
             max-width: 1200px;
-            padding-top: 120px;
             justify-content: flex-end;
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             background-color: #444;
-            padding-left: 400px;
+            padding-left: 200px;
             height: auto;
-            padding-top: 150px;
+            padding-top: 120px;
+            padding-bottom: 20px;
         }
 
         .product-card {
@@ -72,6 +77,8 @@ $products = $db->getProducts();
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            margin-right: 10px;
+
         }
 
         .product-card:hover {
@@ -96,8 +103,12 @@ $products = $db->getProducts();
             transition: transform 0.3s ease;
         }
 
+        .product-card:hover {
+            transform: scale(1.1);
+        }
+
         .product-card:hover .product-image img {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         .product-info {
@@ -244,7 +255,7 @@ $products = $db->getProducts();
             max-width: 1600px;
             box-sizing: border-box;
             margin: auto;
-            padding-left: 90px;
+            padding-left: 150px;
         }
 
         .footer-section {
@@ -261,6 +272,29 @@ $products = $db->getProducts();
             width: 200px;
             display: block;
             margin: 0 auto;
+        }
+
+        #footer .footer-section p:focus,
+        #footer .footer-section a:focus {
+            outline: none;
+            box-shadow: 0 0 4px rgba(221, 153, 51, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        #footer .footer-section p,
+        #footer .footer-section a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            margin-bottom: 0.2rem;
+            line-height: 1.1;
+            display: block;
+        }
+
+        #footer .footer-section p:hover,
+        #footer .footer-section a:hover {
+            color: #dd9933;
         }
 
         .add-to-cart-btn {
@@ -312,25 +346,28 @@ $products = $db->getProducts();
 
         .menu-items li:hover .sub-menu {
             display: block;
+            visibility: visible;
+            opacity: 1;
         }
 
         .sub-menu {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             list-style: none;
             padding: 0;
             margin: 0;
             z-index: 1000;
-            top: 0;
+            top: 138px;
             /* Điều chỉnh vị trí trên cùng của sub-menu */
             left: 100%;
             /* Hiển thị sub-menu bên phải của menu chính */
             background-color: #333;
-            width: 250PX;
+            width: 250px;
+            visibility: hidden;
+            /* Thêm thuộc tính này */
+            opacity: 0;
 
         }
 
@@ -356,11 +393,13 @@ $products = $db->getProducts();
         <div class="menu" id="menu">
             <ul class="menu-items">
                 <li><a href="index.php">Trang chủ</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <ul class="sub-menu">
-                    <li><a href="productcf.php">Cà Phê</a></li>
-                    <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
-                </ul>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="productcf.php">Cà Phê</a></li>
+                        <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
+                    </ul>
+                </li>
                 <li><a href="news.php">Tin tức</a></li>
                 <li><a href="contact.php">Liên hệ</a></li>
                 <li><a href="introduct.php">Giới thiệu</a></li>
@@ -430,7 +469,7 @@ $products = $db->getProducts();
         </div>
         <div class="footer-section">
             <h3>SOCIAL MEDIA</h3>
-            <p> Facebook</p>
+            <p>Facebook</p>
             <p>Instagram</p>
             <p>Youtube</p>
             <p>Tiktok</p>

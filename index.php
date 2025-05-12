@@ -21,7 +21,7 @@ include("admincp/config/config.php")
             <ul class="menu-items">
                 <li><a href="index.php">Trang chủ</a></li>
                 <li>
-                    <a href="produccf.php">Sản phẩm</a>
+                    <a href="#">Sản phẩm</a>
                     <ul class="sub-menu">
                         <li><a href="productcf.php">Cà Phê</a></li>
                         <li><a href="product2.php">Dụng cụ pha Cà Phê</a></li>
@@ -154,7 +154,7 @@ include("admincp/config/config.php")
         </div>
         <div class="footer-section">
             <h3>SOCIAL MEDIA</h3>
-            <p> Facebook</p>
+            <p>Facebook</p>
             <p>Instagram</p>
             <p>Youtube</p>
             <p>Tiktok</p>
