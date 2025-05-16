@@ -291,6 +291,15 @@ $products = $db->getProducts();
             display: block;
         }
 
+        /* comment */
+        #footer .footer-section h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 0.2rem;
+            color: white;
+        }
+
         #footer .footer-section p:hover,
         #footer .footer-section a:hover {
             color: #dd9933;
