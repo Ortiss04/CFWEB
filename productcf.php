@@ -391,6 +391,25 @@ $products = $db->getProducts();
         .sub-menu li a:hover {
             background-color: #444;
         }
+
+        .btdong {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-left: 200px;
+        }
+
+        .hinhgiohang {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -536,10 +555,10 @@ $products = $db->getProducts();
                     return;
                 }
 
-                let cartContent = "<h2>Sản phẩm trong giỏ hàng:</h2><ul>";
+                let cartContent = "<h2>Sản phẩm trong giỏ hàng</h2><ul class='cart-items'>";
                 cartItems.forEach(item => {
                     cartContent += `<li>
-                                <img src="${item.imgSrc}" alt="${item.name}" style="width: 50px; height: 50px;">
+                                <img class="hinhgiohang" src="${item.imgSrc}" alt="${item.name}" style="width: 50px; height: 50px;">
                                 ${item.name} - ${item.price.toLocaleString('vi-VN')} VND
                             </li>`;
                 });
@@ -555,7 +574,7 @@ $products = $db->getProducts();
                 modal.style.padding = '20px';
                 modal.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
                 modal.style.zIndex = '1000';
-                modal.innerHTML = cartContent + '<button onclick="this.parentElement.remove()">Đóng</button>';
+                modal.innerHTML = cartContent + '<button class="btdong" onclick="this.parentElement.remove()">Đóng</button>';
 
 
                 document.body.appendChild(modal);

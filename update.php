@@ -74,6 +74,7 @@ $connect->close();
 
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <title>Sửa Mặt Hàng Cà Phê</title>
@@ -84,6 +85,7 @@ $connect->close();
             margin: 0;
             padding: 0;
         }
+
         .container {
             width: 50%;
             margin: 50px auto;
@@ -92,11 +94,13 @@ $connect->close();
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             text-align: center;
             margin-bottom: 30px;
             color: #333;
         }
+
         .form-control {
             width: 100%;
             padding: 10px;
@@ -105,13 +109,17 @@ $connect->close();
             border-radius: 4px;
             box-sizing: border-box;
         }
+
         .form-control[type="file"] {
             padding: 5px;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007bff;
+            background: linear-gradient(135deg, #b37828, #dd9933);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             color: #fff;
             text-align: center;
             border: none;
@@ -119,15 +127,18 @@ $connect->close();
             cursor: pointer;
             text-decoration: none;
         }
+
         .btn:hover {
-            background-color: #0056b3;
+            background: linear-gradient(135deg, #dd9933, #b37828);
         }
+
         img {
             max-width: 200px;
             margin-top: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>Sửa Mặt Hàng</h2>
@@ -160,4 +171,5 @@ $connect->close();
         </form>
     </div>
 </body>
+
 </html>
