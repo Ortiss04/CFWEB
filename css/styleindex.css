@@ -199,6 +199,7 @@ body {
   font-size: large;
   width: 100px;
   height: 50px;
+  margin-top: 15px;
   position: fixed;
   top: 25px;
   left: 80px;
@@ -319,14 +320,17 @@ body {
 }
 
 .admin-login-btn {
+  width: 120px;
+  height: 50px;
   position: absolute;
+  margin-top: 15px;
+  margin-right: 60px;
   top: 20px;
   right: 20px;
   background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 

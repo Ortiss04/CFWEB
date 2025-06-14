@@ -26,16 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập Admin</title>
-   
+
     <style>
         /* Kiểu dáng cho trang đăng nhập */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: rgb(212, 212, 212);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -77,16 +78,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         button {
             width: 100%;
             padding: 10px;
+            margin-bottom: 15px;
             background-color: black;
             color: #ffffff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            background: linear-gradient(135deg, #b37828, #dd9933);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         button:hover {
-            background-color: #218838;
+            background: linear-gradient(135deg, #dd9933, #b37828);
+        }
+
+        .back-btn {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: black;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .back-btn:hover {
+            background: linear-gradient(135deg, #c9302c, #d9534f);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
         }
 
         .error-message {
@@ -106,12 +133,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         a:hover {
             text-decoration: underline;
         }
+
+        .text {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="login-container">
-        <h2>Đăng Nhập Admin</h2>
+        <h2>ĐĂNG NHẬP</h2>
 
         <!-- Hiển thị thông báo lỗi nếu thông tin đăng nhập sai -->
         <?php if (isset($error_message)): ?>
@@ -121,17 +157,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
 
         <form action="login.php" method="POST">
-            <label for="username">Tài Khoản</label>
+            <label class="text" for="username">Tài Khoản</label>
             <input type="text" id="username" name="username" required>
 
-            <label for="password">Mật Khẩu</label>
+            <label class="text" for="password">Mật Khẩu</label>
             <input type="password" id="password" name="password" required>
 
             <button type="submit">Đăng Nhập</button>
+            <a href="index.php" class="back-btn">Trở Về Trang Chủ</a>
         </form>
 
-       
+
     </div>
 
 </body>
+
 </html>
