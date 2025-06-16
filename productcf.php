@@ -78,11 +78,9 @@ $products = $db->getProducts();
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             margin-right: 10px;
-
         }
 
         .product-card:hover {
-
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
@@ -142,15 +140,14 @@ $products = $db->getProducts();
                 padding: 10px;
             }
 
-        }
+            .product-name {
+                font-size: 14px;
+                min-height: 35px;
+            }
 
-        .product-name {
-            font-size: 14px;
-            min-height: 35px;
-        }
-
-        .product-price {
-            font-size: 16px;
+            .product-price {
+                font-size: 16px;
+            }
         }
 
         #header {
@@ -192,8 +189,6 @@ $products = $db->getProducts();
             display: flex;
             border: 1px solid black;
             height: 70px;
-
-
         }
 
         .total-price {
@@ -241,7 +236,6 @@ $products = $db->getProducts();
         .menu-items li {
             padding: 15px 30px;
             border-bottom: 1px solid #444;
-
         }
 
         #footer {
@@ -328,7 +322,8 @@ $products = $db->getProducts();
         }
 
         .reset-btn,
-        .view-btn {
+        .view-btn,
+        .checkout-btn {
             background-color: black;
             color: white;
             border: none;
@@ -346,9 +341,7 @@ $products = $db->getProducts();
         .btnn {
             display: flex;
             flex-direction: column;
-
             justify-content: space-between;
-
             align-items: center;
         }
 
@@ -368,15 +361,11 @@ $products = $db->getProducts();
             margin: 0;
             z-index: 1000;
             top: 138px;
-            /* Điều chỉnh vị trí trên cùng của sub-menu */
             left: 100%;
-            /* Hiển thị sub-menu bên phải của menu chính */
             background-color: #333;
             width: 250px;
             visibility: hidden;
-            /* Thêm thuộc tính này */
             opacity: 0;
-
         }
 
         .sub-menu li a {
@@ -410,6 +399,39 @@ $products = $db->getProducts();
             margin-right: 10px;
             margin-top: 10px;
         }
+
+        .cart-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .cart-modal ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-modal li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-modal li img {
+            margin-right: 10px;
+        }
+
+        .cart-modal .total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -432,7 +454,6 @@ $products = $db->getProducts();
                 <li><a href="introduct.php">Giới thiệu</a></li>
             </ul>
         </div>
-
 
         <div class="overlay" onclick="toggleMenu()"></div>
 
@@ -512,12 +533,20 @@ $products = $db->getProducts();
             let cartTotal = 0;
             let cartItems = [];
 
+            // load dử liệu
+            if (localStorage.getItem('cartItems')) {
+                cartItems = JSON.parse(localStorage.getItem('cartItems'));
+                cartCount = cartItems.length;
+                cartTotal = cartItems.reduce((sum, item) => sum + item.price, 0);
+                cartQuantity.innerText = cartCount;
+                totalPrice.innerText = cartTotal.toLocaleString('vi-VN') + ' VND';
+            }
 
             document.querySelectorAll('.add-to-cart-btn').forEach(button => {
                 button.addEventListener('click', function() {
                     const productElement = this.closest('.product-info');
                     const name = productElement.querySelector('.product-name').innerText;
-                    const priceText = productElement.querySelector('.product-price').innerText;
+                    const priceText = productElement.querySelector('.product-price').innerText.split('₫')[0].trim();
                     const price = parseFloat(priceText.replace(/[^\d]/g, ''));
                     const imgSrc = this.closest('.product-card').querySelector('.product-image img').src;
 
@@ -525,13 +554,14 @@ $products = $db->getProducts();
                         cartCount += 1;
                         cartTotal += price;
 
-
                         cartItems.push({
                             name,
                             price,
                             imgSrc
                         });
 
+                        // lưu vào data
+                        localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
                         cartQuantity.innerText = cartCount;
                         totalPrice.innerText = cartTotal.toLocaleString('vi-VN') + ' VND';
@@ -539,15 +569,14 @@ $products = $db->getProducts();
                 });
             });
 
-
             resetBtn.addEventListener('click', function() {
                 cartCount = 0;
                 cartTotal = 0;
                 cartItems = [];
+                localStorage.removeItem('cartItems');
                 cartQuantity.innerText = cartCount;
                 totalPrice.innerText = cartTotal.toLocaleString('vi-VN') + ' VND';
             });
-
 
             viewCartBtn.addEventListener('click', function() {
                 if (cartItems.length === 0) {
@@ -563,20 +592,17 @@ $products = $db->getProducts();
                             </li>`;
                 });
                 cartContent += "</ul>";
-
+                cartContent += `<div class="total">Tổng cộng: ${cartTotal.toLocaleString('vi-VN')} VND</div>`;
+                cartContent += '<form id="checkout-form" action="ThanhToan/ThanhToan.php" method="POST">';
+                cartContent += `<input type="hidden" name="cart_items" value='${JSON.stringify(cartItems)}'>`;
+                cartContent += `<input type="hidden" name="total_amount" value="${cartTotal}">`;
+                cartContent += '<button type="submit" class="checkout-btn">Thanh Toán</button>';
+                cartContent += '</form>';
+                cartContent += '<button class="btdong" onclick="this.parentElement.remove()">Đóng</button>';
 
                 const modal = document.createElement('div');
-                modal.style.position = 'fixed';
-                modal.style.top = '30%';
-                modal.style.left = '70%';
-                modal.style.transform = 'translate(-50%, -50%)';
-                modal.style.backgroundColor = '#fff';
-                modal.style.padding = '20px';
-                modal.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
-                modal.style.zIndex = '1000';
-                modal.innerHTML = cartContent + '<button class="btdong" onclick="this.parentElement.remove()">Đóng</button>';
-
-
+                modal.className = 'cart-modal';
+                modal.innerHTML = cartContent;
                 document.body.appendChild(modal);
             });
         });

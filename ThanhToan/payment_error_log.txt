@@ -1,0 +1,100 @@
+2025-06-16 16:05:16 - POST Data: Array
+(
+    [cart_items] => [{"name":"Ly Ống tre Libbey cooler","price":58000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L003.jpg"}]
+    [total_amount] => 58000
+)
+
+2025-06-16 16:05:20 - POST Data: Array
+(
+    [payment_method] => qr
+    [cart_items] => [{"name":"Ly Ống tre Libbey cooler","price":58000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L003.jpg"}]
+    [total_amount] => 58000
+)
+
+2025-06-16 16:15:21 - POST Data: Array
+(
+    [cart_items] => [{"name":"Ly Ống tre Libbey cooler","price":58000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L003.jpg"},{"name":"Cà phê Legend","price":123112,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C003.jpg"},{"name":"Tách gốm Epresso","price":129000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L005.jpg"}]
+    [total_amount] => 310112
+)
+
+2025-06-16 16:15:24 - POST Data: Array
+(
+    [payment_method] => qr
+    [cart_items] => [{"name":"Ly Ống tre Libbey cooler","price":58000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L003.jpg"},{"name":"Cà phê Legend","price":123112,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C003.jpg"},{"name":"Tách gốm Epresso","price":129000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/L005.jpg"}]
+    [total_amount] => 310112
+)
+
+2025-06-16 16:15:44 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:15:56 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:16:31 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:17:02 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:17:26 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:17:48 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:17:59 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:18:10 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:18:51 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:18:55 - POST Data: Array
+(
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:19:16 - POST Data: Array
+(
+    [payment_method] => qr
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+
+2025-06-16 16:19:26 - POST Data: Array
+(
+    [payment_method] => qr
+    [cart_items] => [{"name":"Cà phê Phin","price":95000,"imgSrc":"http://localhost/WebCafe/CFWEB/imgs/C004.jpg"}]
+    [total_amount] => 95000
+)
+

@@ -1,0 +1,179 @@
+body {
+  background-color: #626262;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+.payment-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
+
+.payment-container h2 {
+  color: #dd9933;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method .form-label {
+  color: #626262;
+  font-size: 16px;
+}
+
+.payment-method .form-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.payment-method .form-select:focus {
+  border-color: #dd9933;
+  box-shadow: 0 0 5px rgba(221, 153, 51, 0.5);
+}
+
+.btn-pay {
+  background: linear-gradient(135deg, #dd9933, #b37828);
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-pay:hover {
+  background: linear-gradient(135deg, #b37828, #dd9933);
+  color: black;
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(200, 206, 201, 0.4);
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-container h3 {
+  color: #dd9933;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.qr-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.qr-code-container img {
+  max-width: 200px;
+  border: 2px solid #dd9933;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.payment-info {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  color: #626262;
+}
+
+.payment-info p,
+.payment-info ul {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.payment-info p:hover,
+.payment-info ul:hover {
+  background-color: rgba(221, 153, 51, 0.1);
+}
+
+.payment-info p strong {
+  color: #dd9933;
+}
+
+.error-message {
+  color: #ee4d2d;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 400px) {
+  .qr-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-info {
+    text-align: center;
+  }
+
+  .qr-code-container img {
+    max-width: 150px;
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+}
