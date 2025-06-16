@@ -1,15 +1,15 @@
 <?php
-include("admincp/config/config.php")
+include("admincp/config/config.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalita Cafe</title>
     <link rel="stylesheet" type="text/css" href="css/styleindex.css" />
+    <link rel="stylesheet" type="text/css" href="Chatbot/chatbot.css" />
 </head>
 
 <body>
@@ -31,7 +31,6 @@ include("admincp/config/config.php")
                 <li><a href="contact.php">Liên hệ</a></li>
                 <li><a href="introduct.php">Giới thiệu</a></li>
             </ul>
-
         </div>
 
         <div class="overlay" onclick="toggleMenu()"></div>
@@ -50,21 +49,11 @@ include("admincp/config/config.php")
             <div id="ls">
                 <img src="imgs/ls.png">
                 <br>
-                <h3>HỆ SẢN PHẨM LỐI SỐNG TỈNH THỨC</h3></br>
+                <h3>HỆ SẢN PHẨM LỐI SỐNG TỈNH THỨC</h3><br>
                 <br>
-                <h4 class="text">Như chúng ta đang chứng kiến: dịch bệnh, thiên tai, chiến tranh, nghèo đói, … đang xảy ra liên tục
-                    không loại trừ bất kỳ một cá nhân nào; không một tổ chức, tập đoàn, doanh nghiệp… nào không bị ảnh hưởng;
-                    không phân biệt một quốc gia hay cường quốc nào thì hơn lúc nào hết, đây là thời điểm mà mỗi cá nhân, mỗi gia
-                    đình, mỗi tổ chức, mỗi quốc gia – dân tộc… và toàn thể nhân loại buộc phải tìm kiếm hoặc thay đổi lối sống theo
-                    hướng tìm về sự cân bằng hài hoà với Vũ Trụ, của Tự Nhiên, của Xã Hội Loài Người.</h4>
+                <h4 class="text">Như chúng ta đang chứng kiến: dịch bệnh, thiên tai, chiến tranh, nghèo đói, … đang xảy ra liên tục không loại trừ bất kỳ một cá nhân nào; không một tổ chức, tập đoàn, doanh nghiệp… nào không bị ảnh hưởng; không phân biệt một quốc gia hay cường quốc nào thì hơn lúc nào hết, đây là thời điểm mà mỗi cá nhân, mỗi gia đình, mỗi tổ chức, mỗi quốc gia – dân tộc… và toàn thể nhân loại buộc phải tìm kiếm hoặc thay đổi lối sống theo hướng tìm về sự cân bằng hài hoà với Vũ Trụ, của Tự Nhiên, của Xã Hội Loài Người.</h4>
                 <br>
-                <h4 class="text">Nhận thức được tầm quan trọng của điều đó, trong suốt quá trình xây dựng và phát triển của Tập đoàn Trung
-                    Nguyên Legend từ năm 1996 đến nay, bên cạnh việc không ngừng nghiên cứu và cung ứng đến cộng đồng người tiêu dùng
-                    toàn cầu những ly cà phê năng lượng tuyệt hảo mà Trung Nguyên Legend còn luôn trăn trở, khát vọng kiến tạo một lối sống mới bền vững hơn,
-                    hài hòa hơn. Và sau quá trình nghiên cứu, tìm tòi cách thức phát triển của lịch sử các nền văn minh, các đế chế vĩ đại nhất từ khi thành lập đến
-                    phát triển cực thịnh rồi suy tàn; những tấm gương vĩ nhân thành công nhất trong lịch sử của nhân loại để tìm ra có mẫu số chung và công thức thành
-                    công nào của từng đề chế, từng vĩ nhân… Tập đoàn Trung Nguyên Legend nhận ra rằng, con đường để mỗi cá nhân, mỗi quốc gia – dân tộc đạt tới sự giàu có đó chính
-                    là trải nghiệm, học hỏi, áp dụng và thực hành một lối sống mới – Lối Sống Tỉnh Thức.</h4>
+                <h4 class="text">Nhận thức được tầm quan trọng của điều đó, trong suốt quá trình xây dựng và phát triển của Tập đoàn Trung Nguyên Legend từ năm 1996 đến nay, bên cạnh việc không ngừng nghiên cứu và cung ứng đến cộng đồng người tiêu dùng toàn cầu những ly cà phê năng lượng tuyệt hảo mà Trung Nguyên Legend còn luôn trăn trở, khát vọng kiến tạo một lối sống mới bền vững hơn, hài hòa hơn. Và sau quá trình nghiên cứu, tìm tòi cách thức phát triển của lịch sử các nền văn minh, các đế chế vĩ đại nhất từ khi thành lập đến phát triển cực thịnh rồi suy tàn; những tấm gương vĩ nhân thành công nhất trong lịch sử của nhân loại để tìm ra có mẫu số chung và công thức thành công nào của từng đề chế, từng vĩ nhân… Tập đoàn Trung Nguyên Legend nhận ra rằng, con đường để mỗi cá nhân, mỗi quốc gia – dân tộc đạt tới sự giàu có đó chính là trải nghiệm, học hỏi, áp dụng và thực hành một lối sống mới – Lối Sống Tỉnh Thức.</h4>
             </div>
             <div class="sp"><a>BỘ SẢN PHẨM 3 NỀN VĂN MINH CÀ PHÊ</a></div>
             <div class="container">
@@ -89,46 +78,28 @@ include("admincp/config/config.php")
             </div>
             <div class="sp"><a>BỘ SẢN PHẨM THIỀN CÀ PHÊ</a></div>
             <div class="containerr">
-
                 <div class="product1"><img src="imgs/hemingway.jpg" />
-                    <h3>The Spririt of Philosophy (Hemingway)</h3>
-                    <a>Lấy cảm hứng từ tinh thần dám dấn thân vì đam mê để
-                        vượt qua nghịch cảnh cuộc đời và để lại kho tàng tuyệt tác
-                        văn chương mang đậm triết lý cho nhân loại của nhà văn Ernest
-                        Hemingway; bộ sản phẩm Tinh thần Triết gia – The Spririt of Philosophy
-                        mong muốn đem đến cho người trải nghiệm nguồn năng lượng của tinh thần dấn
-                        thân để thách thức mọi nghịch cảnh – chinh phục khát vọng cuộc đời.</a>
-                    <p><a class="link" href="spirit.php">Tìm Hiểu Thêm ></a>
+                    <h3>The Spirit of Philosophy (Hemingway)</h3>
+                    <a>Lấy cảm hứng từ tinh thần dám dấn thân vì đam mê để vượt qua nghịch cảnh cuộc đời và để lại kho tàng tuyệt tác văn chương mang đậm triết lý cho nhân loại của nhà văn Ernest Hemingway; bộ sản phẩm Tinh thần Triết gia – The Spirit of Philosophy mong muốn đem đến cho người trải nghiệm nguồn năng lượng của tinh thần dấn thân để thách thức mọi nghịch cảnh – chinh phục khát vọng cuộc đời.</a>
+                    <p><a class="link" href="spirit.php">Tìm Hiểu Thêm ></a></p>
                 </div>
-
-                <div class="product1"> <img src="imgs/creativy.jpg" />
-                    <h3>The Spirit of Creativity
-                        <p>(The Creation of Adam)
+                <div class="product1"><img src="imgs/creativy.jpg" />
+                    <h3>The Spirit of Creativity <p>(The Creation of Adam)</p>
                     </h3>
-                    <a>Lấy cảm hứng từ bức họa nổi tiếng “Chúa trời tạo ra Adam” của Michelangelo
-                        – Bộ Sản phẩm The Spirit of Creativity - The Creation of Adam mong muốn đem đến cho người trải
-                        nghiệm nguồn năng lượng của sự sáng tạo để xây dựng nên những trang sử vĩ đại cho cuộc đời mình.</a>
-                    <p><a class="link" href="creativity.php">Tìm Hiểu Thêm ></a>
+                    <a>Lấy cảm hứng từ bức họa nổi tiếng “Chúa trời tạo ra Adam” của Michelangelo – Bộ Sản phẩm The Spirit of Creativity - The Creation of Adam mong muốn đem đến cho người trải nghiệm nguồn năng lượng của sự sáng tạo để xây dựng nên những trang sử vĩ đại cho cuộc đời mình.</a>
+                    <p><a class="link" href="creativity.php">Tìm Hiểu Thêm ></a></p>
                 </div>
                 <div class="product1"><img src="imgs/philosophy.jpg" />
-                    <h3>The Spirit of Philosophy
-                        <p>(Vitruvian man)
+                    <h3>The Spirit of Philosophy <p>(Vitruvian man)</p>
                     </h3>
-                    <a>Lấy cảm hứng từ bức họa “Người Vitruvian” của Leonardo da Vinci, bức họa đã góp một phần quan trọng trong y
-                        học, giải phẫu học ngày nay. Bộ Sản phẩm The Spirit of Philosophy - Vitruvian man mong muốn đem đến cho người
-                        trải nghiệm nguồn năng lượng của tinh thần triết gia để hình thành lý tưởng sốn
-                        g phù hợp, hoặc tự giải thích được tất cả những sự việc quanh đời sống bằng quan điểm, lý lẽ thuyết phục.</a>
-                    <p><a class="link" href="philosophy.php">Tìm Hiểu Thêm ></a>
+                    <a>Lấy cảm hứng từ bức họa “Người Vitruvian” của Leonardo da Vinci, bức họa đã góp một phần quan trọng trong y học, giải phẫu học ngày nay. Bộ Sản phẩm The Spirit of Philosophy - Vitruvian man mong muốn đem đến cho người trải nghiệm nguồn năng lượng của tinh thần triết gia để hình thành lý tưởng sống phù hợp, hoặc tự giải thích được tất cả những sự việc quanh đời sống bằng quan điểm, lý lẽ thuyết phục.</a>
+                    <p><a class="link" href="philosophy.php">Tìm Hiểu Thêm ></a></p>
                 </div>
                 <div class="product1"><img src="imgs/chienbinhtam.jpg" />
-                    <h3>The Spirit of Warrior
-                        <p>(Chiến Binh Tâm)
+                    <h3>The Spirit of Warrior <p>(Chiến Binh Tâm)</p>
                     </h3>
-                    <a>Lấy cảm hứng từ tinh thần chiến binh của Nhà khai sáng trên lưng ngựa Napoleon,
-                        bộ sản phẩm Chiến Binh Tâm mong muốn khơi dậy ở mọi người đặc biệt là giới trẻ
-                        tinh thần chiến binh (phẩm chất cao quý, kỹ năng, đạo đức, khí chất… ) & khát vọng
-                        để thành công trong mọi lĩnh vực của cuộc sống.</a>
-                    <p><a class="link" href="chienbinhtam.php">Tìm Hiểu Thêm ></a>
+                    <a>Lấy cảm hứng từ tinh thần chiến binh của Nhà khai sáng trên lưng ngựa Napoleon, bộ sản phẩm Chiến Binh Tâm mong muốn khơi dậy ở mọi người đặc biệt là giới trẻ tinh thần chiến binh (phẩm chất cao quý, kỹ năng, đạo đức, khí chất… ) & khát vọng để thành công trong mọi lĩnh vực của cuộc sống.</a>
+                    <p><a class="link" href="chienbinhtam.php">Tìm Hiểu Thêm ></a></p>
                 </div>
             </div>
         </div>
@@ -160,6 +131,21 @@ include("admincp/config/config.php")
             <p>Tiktok</p>
         </div>
     </footer>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h5>KALITA CHATBOT</h5>
+            <button type="button" class="btn-close" id="closeChatbot"></button>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" class="form-control" id="chatInput" placeholder="Hỏi về cà phê, sản phẩm, hoặc cửa hàng..." />
+                <button class="btn btn-primary" id="sendMessage"><i class="bi bi-send"></i>Gửi</button>
+            </div>
+        </div>
+    </div>
+    <script src="Chatbot/chatbot.js"></script>
 </body>
 
 </html>

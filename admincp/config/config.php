@@ -4,4 +4,4 @@ $user = 'root';
 $pass = '';
 $database = 'test';
 
-$connect = new mysqLi($sever, $user, $pass, $database);
+$connect = new mysqli($sever, $user, $pass, $database);
